@@ -31,9 +31,9 @@ function boundary(a)
         console.log("boundary: invalid type argument (" + typeof(a) +" instead of number)");
         return 0;
     }
-    return a >= 20 && a <= 100 ? true : false;
+    return (a >= 20 && a <= 100) || a === 400 ? true : false;
 }
-console.log("2) - " + boundary(4));
+console.log("2) - " + boundary(20));
 
 /* ESERCIZIO 3
  Scrivi una funzione chiamata "reverseString", che accetta una stringa come parametro e la ritorna invertita (es.: EPICODE => EDOCIPE).
